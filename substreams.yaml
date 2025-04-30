@@ -1,0 +1,15 @@
+specVersion: v0.1.0
+package:
+  name: tron
+  version: v0.1.0
+  url: https://github.com/streamingfast/substreams-tron
+  image: ./logo.png
+  doc: |
+    These substreams modules is bundling lib and proto files descriptor for Tron chain
+
+network: tron-mainnet
+
+protobuf:
+  descriptorSets:
+    - module: buf.build/streamingfast/firehose-tron
+    - module: buf.build/protocolbuffers/wellknowntypes
