@@ -1,3 +1,3 @@
-# substreams-tron
+# Substreams TRON
 
-Substreams modules is bundling lib and proto files descriptor for Tron chain.
+Substreams modules is bundling lib and proto files descriptor for TRON chain.
