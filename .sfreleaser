@@ -1,0 +1,9 @@
+global:
+  language: rust
+  variant: library
+release:
+  pre-build-hooks:
+    - ./.sfreleaser.pre-release.sh "{{ .release.Version }}"
+    - substreams pack -o "{{ .buildDir }}/{{ .global.Project }}-{{ .release.Version }}.spkg" substreams.yaml
+  upload-extra-assets:
+    - "{{ .buildDir }}/{{ .global.Project }}-{{ .release.Version }}.spkg"
