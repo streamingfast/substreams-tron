@@ -1,3 +1,4 @@
 .DS_STORE
 *.spkg
 build/
+dist/
